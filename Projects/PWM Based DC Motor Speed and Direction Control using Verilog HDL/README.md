@@ -160,19 +160,6 @@ Direction changes according to `dir` input.
 
 ---
 
-# Folder Structure
-
-```text
-PWM-DC-Motor-Control/
-│
-├── pwm.v                # Verilog HDL source code
-├── constraints.xdc      # FPGA constraints file
-├── simulation/          # Simulation files
-├── images/              # RTL schematic and waveform images
-└── README.md            # Project documentation
-```
-
----
 
 # Conclusion
 
@@ -180,10 +167,6 @@ This project demonstrates the implementation of a PWM based DC motor controller 
 
 ---
 
-# Author
-**Nisanth S**
-
----
 
 # License
 This project is open-source and available under the MIT License.
