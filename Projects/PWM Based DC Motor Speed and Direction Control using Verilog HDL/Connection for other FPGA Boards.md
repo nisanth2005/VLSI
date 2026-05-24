@@ -1,7 +1,10 @@
                                                     Edge Artix 7 board 
-                                                    <img width="1200" height="1200" alt="image" src="https://github.com/user-attachments/assets/e9a6922b-340c-46ac-8ac9-368ef8ddbeef" />
+                                                   
+<img width="1200" height="1200" alt="image" src="https://github.com/user-attachments/assets/e9a6922b-340c-46ac-8ac9-368ef8ddbeef" />
 
-Constraints for this:
+Constraints for this: 
+
+
 set_property -dict {PACKAGE_PIN N11 IOSTANDARD LVCMOS33} [get_ports {clk}]
 set_property -dict {PACKAGE_PIN M12 IOSTANDARD LVCMOS33} [get_ports {rst}]
 set_property -dict {PACKAGE_PIN L5 IOSTANDARD LVCMOS33} [get_ports {value[0]}]   
