@@ -7,7 +7,27 @@ The design generates a PWM signal with different duty cycles to control the moto
 <img width="695" height="399" alt="image" src="https://github.com/user-attachments/assets/f0ae5bc5-d258-4589-b601-dc157325110f" />
 
 
-The project is designed using **Xilinx Vivado** and can be implemented on an FPGA development board with an external motor driver module such as **L293D** or **L298N**.
+What is PWM ?
+Pulse-width modulation, commonly known as PWM, is a modulation method that changes the pulse signal's width in electrical systems to regulate the average power supplied to a load. PWM is particularly helpful for effectively regulating the output of audio amplifiers, the speed of motors,  brightness of light,etc..
+
+To efficiently control power delivery to devices without wasting energy,preicsely in devices like motors, LEDs the  Duty cycle is used in PWM
+Duty Cycle of PWM 
+The fraction of a second that a signal or system is operational is called a duty cycle. A duty cycle is usually expressed as a percentage or ratio. The amount of time a signal takes to complete an ON-OFF cycle is called a period. The proportion of time a digital signal is on throughout a period of time or interval is precisely described by the percentage duty cycle. The waveform time is equal to its inverse frequency. 
+
+    			Duty Cycle :  On Time / (On Time + Off Time)
+We would say a digital signal has a 50% duty cycle and looks like a perfect square wave if it is on for half of the time and off for the other half. The digital signal spends more time in the high state than the low state if the percentage is greater than 50%, and vice versa if the duty cycle is lower than 50%. Here is a graph depicting the three scenarios.
+
+
+
+
+
+
+
+
+A 100% duty cycle is equivalent to a 5 volt (high) voltage setting. Grounding the signal would be equivalent to 0% duty cycle.
+
+
+
 
 ---
 
