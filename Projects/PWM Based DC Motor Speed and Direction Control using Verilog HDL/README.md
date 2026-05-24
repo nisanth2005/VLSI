@@ -3,6 +3,8 @@
 ## Overview
 This project implements a **PWM (Pulse Width Modulation) based DC motor speed and direction control system** using **Verilog HDL** on an FPGA board.  
 The design generates a PWM signal with different duty cycles to control the motor speed and also provides direction control signals for clockwise and anticlockwise rotation.
+<img width="695" height="399" alt="image" src="https://github.com/user-attachments/assets/f0ae5bc5-d258-4589-b601-dc157325110f" />
+
 
 The project is designed using **Xilinx Vivado** and can be implemented on an FPGA development board with an external motor driver module such as **L293D** or **L298N**.
 
@@ -53,6 +55,8 @@ The module uses an 8-bit counter to generate PWM signals.
 | 01 | 25% | Slow Speed |
 | 10 | 50% | Medium Speed |
 | 11 | 100% | Full Speed |
+<img width="928" height="476" alt="image" src="https://github.com/user-attachments/assets/e4446e48-df63-48eb-be7b-87af2f0a1632" />
+
 
 ---
 
@@ -115,6 +119,38 @@ pwm_out = 0
 
 ---
 
+# Simulation
+
+## Testbench Description
+
+The following Verilog testbench is used to simulate and verify the PWM based DC motor speed and direction control module.
+
+The testbench performs:
+- Clock generation
+- Reset operation
+- Different duty cycle testing
+- Direction control testing
+- Functional verification of the PWM module
+
+---
+# Expected Simulation Output
+
+| value | Duty Cycle | Motor Speed |
+|------|-------------|--------------|
+| 00 | 0% | Motor OFF |
+| 01 | 25% | Slow Speed |
+| 10 | 50% | Medium Speed |
+| 11 | 100% | Full Speed |
+
+| dir | Rotation |
+|-----|-----------|
+| 0 | Anticlockwise |
+| 1 | Clockwise |
+
+---
+<img width="857" height="253" alt="image" src="https://github.com/user-attachments/assets/332d854f-14d9-47b3-abce-a249646eadfa" />
+
+
 # Hardware Connections
 
 ## FPGA to Motor Driver
@@ -130,16 +166,8 @@ pwm_out = 0
 
 ---
 
-# Simulation Result
+<img width="866" height="419" alt="image" src="https://github.com/user-attachments/assets/f343c741-5a5b-43f6-8967-b5e1d3fa6b92" />
 
-The PWM waveform changes according to the selected duty cycle:
-- 25% → Short HIGH pulse
-- 50% → Equal HIGH and LOW pulse
-- 100% → Fully HIGH output
-
-Direction changes according to `dir` input.
-
----
 
 # Applications
 - Robotics
@@ -160,6 +188,7 @@ Direction changes according to `dir` input.
 
 ---
 
+<img width="867" height="479" alt="image" src="https://github.com/user-attachments/assets/dda417d3-c849-481f-9a6a-e4847a51610a" />
 
 # Conclusion
 
@@ -168,5 +197,3 @@ This project demonstrates the implementation of a PWM based DC motor controller 
 ---
 
 
-# License
-This project is open-source and available under the MIT License.
