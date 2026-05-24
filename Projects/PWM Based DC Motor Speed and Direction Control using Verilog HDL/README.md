@@ -3,6 +3,7 @@
 ## Overview
 This project implements a **PWM (Pulse Width Modulation) based DC motor speed and direction control system** using **Verilog HDL** on an FPGA board.  
 The design generates a PWM signal with different duty cycles to control the motor speed and also provides direction control signals for clockwise and anticlockwise rotation.
+
 <img width="695" height="399" alt="image" src="https://github.com/user-attachments/assets/f0ae5bc5-d258-4589-b601-dc157325110f" />
 
 
