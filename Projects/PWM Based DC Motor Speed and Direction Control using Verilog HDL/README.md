@@ -1,4 +1,4 @@
-                                   PWM Based DC Motor Speed and Direction Control using Verilog HDL
+PWM Based DC Motor Speed and Direction Control using Verilog HDL
 Overview
 
 This project implements a PWM (Pulse Width Modulation) based DC motor speed and direction control system using Verilog HDL on an FPGA board.
@@ -79,6 +79,15 @@ Synthesize the design
 Implement on FPGA
 Connect motor driver and DC motor
 Observe speed and direction control
+Constraints File (XDC)
+set_property -dict {PACKAGE_PIN F14 IOSTANDARD LVCMOS33} [get_ports {clk}]
+set_property -dict {PACKAGE_PIN J2 IOSTANDARD LVCMOS33} [get_ports {rst}]
+set_property -dict {PACKAGE_PIN V2 IOSTANDARD LVCMOS33} [get_ports {value[0]}]
+set_property -dict {PACKAGE_PIN U2 IOSTANDARD LVCMOS33} [get_ports {value[1]}]
+set_property -dict {PACKAGE_PIN U1 IOSTANDARD LVCMOS33} [get_ports {dir}]
+set_property -dict {PACKAGE_PIN A14 IOSTANDARD LVCMOS33} [get_ports {pwm_out}]
+set_property -dict {PACKAGE_PIN B14 IOSTANDARD LVCMOS33} [get_ports {in1}]
+set_property -dict {PACKAGE_PIN A13 IOSTANDARD LVCMOS33} [get_ports {in2}]
 Hardware Connections
 FPGA to Motor Driver
 FPGA Output	Motor Driver
@@ -110,3 +119,22 @@ Closed-loop motor speed control
 LCD/7-segment display integration
 Bluetooth/WiFi motor control
 PID based motor controller
+Folder Structure
+PWM-DC-Motor-Control/
+│
+├── pwm.v                # Verilog HDL source code
+├── constraints.xdc      # FPGA constraints file
+├── simulation/          # Simulation files
+├── images/              # RTL schematic and waveform images
+└── README.md            # Project documentation
+Conclusion
+
+This project demonstrates the implementation of a PWM based DC motor controller using Verilog HDL on FPGA. The design efficiently controls both motor speed and direction using PWM techniques and digital logic, making it suitable for real-time embedded and motor control applications.
+
+Author
+
+Nisanth S
+
+License
+
+This project is open-source and available under the MIT License.
