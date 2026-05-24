@@ -262,5 +262,3 @@ Implementation includes:
 
 This project successfully implements a Smart Cold Storage Temperature Controller using Verilog HDL. The system efficiently monitors temperature, controls cooling levels, and generates alerts during critical conditions. The FSM based architecture improves reliability, energy efficiency, and system performance.
 
-
-This project is open-source and available under the MIT License.
